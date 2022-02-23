@@ -1,10 +1,12 @@
 # azurePowerShell
 
 
+# 1. Pull Ubuntu and run
 ```
 $ docker run --rm -it --name ubuntu ubuntu:18.04 /bin/bash
 ```
 
+# 2. Install PowerShell
 https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/4-exercise-install-azure-powershell?pivots=linux
 ```
 # apt-get update
@@ -15,6 +17,8 @@ https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powersh
 # sudo apt-get update
 # sudo apt-get install -y powershell
 ```
+
+# 3. Run PowerShell
 ```
 # pwsh
 PowerShell 7.2.1
@@ -26,11 +30,13 @@ Type 'help' to get help.
 PS /root> 
 ```
 
+# 4. Install Azure module for the PowerShell
 https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/5-create-resource-interactively?pivots=linux
-
 ```
 PS /root> Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 ```
+
+# 5. Connect the PowerShell to the Azure Subscription thru Azure AD account
 ```
 PS /root> Connect-AzAccount -UseDeviceAuthentication
 PS /root> Get-AzContext                               

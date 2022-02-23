@@ -39,3 +39,6 @@ Name                                     Account                    Subscription
 ----                                     -------                    ----------------           -----------                --------
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  -… xxxxxxx…                   AzureCloud                                            xxxxxxxx-xxxx-xxxx-xxxx-…
 ```
+```
+PS /root> New-AzResourceGroup -Name <name> -Location <location>
+```

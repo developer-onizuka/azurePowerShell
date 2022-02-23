@@ -31,3 +31,11 @@ https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powersh
 ```
 PS /root> Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 ```
+```
+PS /root> Connect-AzAccount -UseDeviceAuthentication
+PS /root> Get-AzContext                               
+
+Name                                     Account                    SubscriptionName           Environment                TenantId
+----                                     -------                    ----------------           -----------                --------
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  -… xxxxxxx…                   AzureCloud                                            xxxxxxxx-xxxx-xxxx-xxxx-…
+```

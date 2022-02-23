@@ -48,3 +48,22 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  -… xxxxxxx…                   Concierg
 ```
 PS /root> New-AzResourceGroup -Name <name> -Location <location>
 ```
+
+# 5. User PowerShell Script to create VM
+https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/8-exercise-create-resource-using-script
+
+```
+cat << EOF > ConferenceDailyReset.ps1 
+param([string]\$resourceGroup)
+\$adminCredential = Get-Credential -Message "Enter a username and password for the VM administrator."
+For (\$i = 1; \$i -le 3; \$i++)
+{
+    \$vmName = "ConferenceDemo" + \$i
+    Write-Host "Creating VM: " \$vmName
+    New-AzVm -ResourceGroupName \$resourceGroup -Name \$vmName -Credential \$adminCredential -Image UbuntuLTS
+}
+EOF
+```
+```
+PS /root> ./ConferenceDailyReset.ps1 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+``

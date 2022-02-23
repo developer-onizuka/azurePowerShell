@@ -37,7 +37,7 @@ PS /root> Get-AzContext
 
 Name                                     Account                    SubscriptionName           Environment                TenantId
 ----                                     -------                    ----------------           -----------                --------
-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  -… xxxxxxx…                                              AzureCloud                 xxxxxxxx-xxxx-xxxx-xxxx-…
+xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  -… xxxxxxx…                   Concierge Subscription     AzureCloud                 xxxxxxxx-xxxx-xxxx-xxxx-…
 ```
 ```
 PS /root> New-AzResourceGroup -Name <name> -Location <location>

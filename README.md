@@ -65,5 +65,5 @@ For (\$i = 1; \$i -le 3; \$i++)
 EOF
 ```
 ```
-PS /root> ./ConferenceDailyReset.ps1 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+PS /root> ./ConferenceDailyReset.ps1 <ResourceGroup defined in #5>
 ```

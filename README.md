@@ -49,7 +49,7 @@ xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx  -… xxxxxxx…                   Concierg
 PS /root> New-AzResourceGroup -Name <name> -Location <location>
 ```
 
-# 5. User PowerShell Script to create VM
+# 6. User PowerShell Script to create VM
 https://docs.microsoft.com/en-us/learn/modules/automate-azure-tasks-with-powershell/8-exercise-create-resource-using-script
 
 ```
@@ -65,5 +65,5 @@ For (\$i = 1; \$i -le 3; \$i++)
 EOF
 ```
 ```
-PS /root> ./ConferenceDailyReset.ps1 <ResourceGroup defined in #5>
+PS /root> ./ConferenceDailyReset.ps1 <Name of ResourceGroup defined in #5>
 ```
